@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color styles */
+
+.blue-light{
+    color: #DCEAF5;
+}
+.blue-dark{
+    color:#063255;
+}
+.gray{
+    color:#5B5B5B;
+}
+.orange{
+    color: #F58A07;
+}
+.black{
+    color: #1D3444;
+}
+.bg-gray-blue{
+    background-color:#DCEAF5;
+}
+.lightblue-bg{
+    background-color: #EDF7FF;
+}
+/* font size styles*/
+
+.xxl{
+    font-size: 4rem;
+}
+.xl{
+    font-size: 3rem;
+}
+.large{
+    font-size: 2rem;
+}
+.medium{
+    font-size: 1.5rem;
+}
+.normal{
+    font-size: 1rem;
+}
+
+/* layout styles */
+
+.row{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.col-3{
+    width: calc(100% / 3 - 40px);
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+.col-2{
+    width: calc(100%/2 - 40px);
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+section{
+    padding: 5% 0;
+}
+.p-1rem-0{
+    padding: 0.5rem 0;
+}
+.max{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 4em;
+    line-height: 1.2em;
+}
+
+/* Navbar */
+
+#navbar-button{
+    background: rgba(245, 138, 7, 0.1);
+    color: orange;
+    padding: 0.8em 1.6em;
+    border-radius: 20px;
+    margin-left: 1em;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li a{
+    color: black;
+    font-weight: 600;
+}
+
+/* solutions section */
+
+#header-button-area{
+    padding: 3em 0;
+}
+#header-button{
+    color: white;
+    background-color: #F58A07;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+/* company section */
+
+#company img{
+    border-radius: 20px;
+    width: 100%;
+}
+#company h3{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+}
+.company-article{
+    width: 40%;
+}
+#company p{
+    padding: 1rem 0;
+}
+#company a{
+    color: orange;
+}
+#company a:after{
+    content: '\2192';
+    margin-left: 10px;
+}
+
+/* challenges section */
+
+#challenges h3{
+    padding: 1rem 0;
+}
+#challenge-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#item{
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+/* experience section */
+
+#experience img{
+    border-radius: 20px;
+    background: rgb(245, 138, 7);
+    background-blend-mode: multiply;
+    
+}
+#experience-image::after{
+  content: '';
+  position: absolute;
+  width: 20%;
+  background-color: rgb(245, 138, 7);
+  height: 650px;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+/* business section */
+
+#business-navbar{
+    padding: 2% 5%;
+    list-style: none;
+}
+.business-ribbon{
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+}
+#business-button a::after{
+    content: '\2192';
+    margin-left: 10px;
+}
+#business-button{
+    display: block;
+    margin-top: 3.5rem;
+}
+#business-image{
+    position: relative;
+}
+#business-image::after{
+  content: '';
+  position: absolute;
+  width: 25%;
+  background-color: rgb(245, 138, 7);
+  height: 445px;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+/* energy section */
+
+#energy-image{
+    background: url(/img/experience-image.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center -180px;
+}
+#energy-article{
+    background-color:#F58A07;
+    padding: 6%;
+    line-height: 3.7rem;
+}
+#energy-article h3{
+    width: 70%;
+}
+#energy-article a{
+    display: block;
+    margin-top: 2rem;
+    width: 220px;
+    background-color: white;
+    text-align: center;
+    border-radius:35px;
+}
+
+/* ceo section */
+
+#profile-image img{
+    width: 90px;
+    border-radius: 50%;
+    height: 90px;
+}
+#ceo-image{
+    position: relative;
+}
+#play-icon{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+}
+#ceo-image h4{
+    position: absolute;
+    bottom: 12.5%;
+    left: 20%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* latest news section */
+
+.latest-card{
+    background-color: white;
+    border-radius: 20px;
+}
+.latest-card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#latest-blog a:after{
+    content: '\2192';
+    margin-left: 10px;
+}
+#latest-blog{
+    line-height: 1.8rem;
+}
+
+/* footer */
+
+footer{
+    padding: 4% 0;
+    line-height: 2.7rem;
+}
+.footer-left-orange{
+    position: relative;
+}
+.footer-right-orange{
+    position: relative;
+}
+.footer-left-orange::after{
+    content: '';
+    position: absolute;
+    background-color: #F58A07;
+    bottom: -420px;
+    width: 50px;
+    height: 150px;
+    border-top-right-radius: 20px;
+}
+.footer-right-orange::after{
+    content: '';
+    position: absolute;
+    background-color: #F58A07;
+    right: 0;
+    width: 60px;
+    height:280px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#footer-newsletter input{
+    padding: 17px;
+    border-radius: 30px;
+    width: 350px;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+}
+#footer-newsletter a{
+    display: block;
+    background-color:#F58A07;
+    color: white;
+    text-align: center;
+    width: 180px;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+/* learn more news max-width */
+
+.max-1000{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+/* Careers */
+
+#careers a{
+    color: white;
+    background-color: #F58A07;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+#careers p{
+    padding: 2rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.careers-image{
+    position: relative;
+}
+.careers-image img{
+    border-radius: 20px;
+}
+.careers-image::after{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 666px;
+    background-color: #F58A07;
+    mix-blend-mode: multiply;
+    top: 0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* position */
+#positions{
+    padding-top: 0;
+}
+#positions h2{
+    padding-bottom: 5%;
+}
+.position-card{
+    background-color: #EDF7FF;
+    padding: 3%;
+    border-radius: 25px;
+}
+.position-card h5{
+    font-size: 1.1rem;
+    padding: 15px 0 35px 0;
+    color: #5B5B5B;
+}
+.position-card h4{
+    font-size: 1.4rem;
+}
+.position-card a{
+    color: #F58A07;
+    font-size: 1.1rem;
+}
+
+/* Apply Now */
+
+.apply-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.apply-flex-left{
+    width: 50%;
+}
+.apply-flex-left p{
+    padding: 10px 0;
+}
+.apply-flex-right{
+    width: 20%;
+}
+.apply-flex-right p{
+    padding: 10px 0;
+}
+.details{
+    padding: 5%;
+    margin: 3% 0;
+    border-radius: 20px;
+}
+.details h3{
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+#apply-input input{
+    width: 307px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #EDF7FF;
+    border: none;
+    font-size: 1.1rem;
+}
+.apply-big-input{
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: #EDF7FF;
+    height: 200px;
+}
