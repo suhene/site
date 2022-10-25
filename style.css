@@ -553,8 +553,7 @@ footer{
     margin-left: 10px;
 }
 #blog-image img{
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
 }
 .latest-card-blog{
     background-color:#EDF7FF;
@@ -562,7 +561,8 @@ footer{
     flex-grow: 0;
 }
 .latest-card-blog img{
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /* Contact */
