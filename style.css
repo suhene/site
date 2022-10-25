@@ -553,7 +553,8 @@ footer{
     margin-left: 10px;
 }
 #blog-image img{
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .latest-card-blog{
     background-color:#EDF7FF;
