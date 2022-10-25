@@ -203,6 +203,16 @@ nav ul li a{
     padding: 2% 5%;
     list-style: none;
 }
+#strategy-button{
+    border-radius:20px; 
+    background-color:white;
+    padding: 8px 20px;
+}
+.same-button{
+    border:1px solid;
+    border-radius:20px;
+    padding:5px 20px;
+}
 .business-ribbon{
     position: absolute;
     top: -1rem;
@@ -246,7 +256,7 @@ nav ul li a{
     line-height: 3.7rem;
 }
 #energy-article h3{
-    width: 70%;
+    max-width: 70%;
 }
 #energy-article a{
     display: block;
@@ -289,6 +299,9 @@ nav ul li a{
     background-color: white;
     border-radius: 20px;
     flex-grow: 0;
+}
+.latest-card div{
+    padding: 8%;
 }
 .latest-card img{
     border-top-left-radius: 20px;
@@ -350,6 +363,7 @@ footer{
     padding: 5px;
     font-size: 1.2rem;
 }
+/* PAGE STYLES */
 
 /* learn more news max-width */
 
@@ -447,7 +461,8 @@ footer{
     border: none;
     border-radius: 30px;
     background-color: #D2DAED2B;
-    padding: 15px 15px 13rem 15px;
+    padding: 15px 15px 0 15px;
+    font-family: 'Poppins', sans-serif;
 }
 .apply-now a{
     color: white;
@@ -537,10 +552,16 @@ footer{
     content: '\2192';
     margin-left: 10px;
 }
+#blog-image img{
+    border-radius: 20px;
+}
 .latest-card-blog{
     background-color:#EDF7FF;
     border-radius: 20px;
     flex-grow: 0;
+}
+.latest-card-blog img{
+    border-radius: 20px;
 }
 
 /* Contact */
